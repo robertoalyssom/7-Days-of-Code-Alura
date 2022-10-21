@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7 Days of Code - Day 2</title>
+</head>
+<body>
+    <script type="text/javascript">
+
+        let nome = prompt ("What is your name?");
+        document.write ("Hello ", nome, ", ");
+        
+        let age = prompt ("What is your age?");
+        document.write ("you have ", age, " years old" );
+            
+        let language = prompt ("What programmig language are you learning?");
+        document.write (" and you are learning ", language, ".");
+
+        let satisfaction = prompt ("Are you enjoying studing " + language + ".? Answear whith number 1 for Yes or 2 for No");
+        if (satisfaction == 1) {
+            document.write (" Very Good! Keep studing and you will be very successful! &#129321;");
+        } else if (satisfaction == 2) {
+            document.write (" What a pity... Have you already tried to learn other languages? &#128578;");
+        } else {
+            alert ("Use only number 1 or 2 to answer! The page will be reloaded, ok?");
+            window.location.reload();
+        }
+
+    </script>
+</body>
+</html>
+
+<!--teste-->
