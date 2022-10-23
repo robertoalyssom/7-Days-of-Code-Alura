@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>7 Days of Code - Day 3</title>
 </head>
-<body>    
+<body> 
+    
+    
 
     <script> //teste git
         //-- Criar destinos possiveis em um jogo
@@ -26,29 +28,27 @@
         //-- O importante é que a pessoa que estiver jogando possa sempre escolher qual decisão tomar para conseguir aprender e se desenvolver na área de programação.
 
         let area = prompt ("Olá! Em qual área você deseja seguir? Front-end ou Back-end");
-        alert("Voce escolheu " + area);
+        alert("Voce escolheu" + area);
         
         if (area == "Front-end") {
             let tecnologiaFront = prompt ("Òtima escolha! Agora, qual tecnologia você quer aprender? React ou Vue");
             alert(tecnologiaFront + "? Ok!");
         } else if (area == "Back-end") {
             let tecnologiaBack = prompt ("Òtima escolha! Agora, qual tecnologia você quer aprender? C# ou Java?");
-            alet(tecnologiaBack + "? Ok!");
+            alert(tecnologiaBack + "? Ok!");
         };
 
-        let seguirOuFull = prompt ("Você deseja continuar se especializando na área ou deseja se desenvolver em Fukkstack?");
-        alert (seguirOuFull + "certo");
-
-        let adicionarPergunta = prompt ("Quais tecnologias você gostaria de se especializar ou conhecer?");
-        alert (adicionarPergunta);
+        let seguirOuFull = prompt ("Você deseja continuar se especializando na área ou deseja se desenvolver em Fullstack?");
+        alert (seguirOuFull + ". Certo");
 
       //-- 4 é necessário criar loop 
-        let adionandoTec = 0
+        let i = 0;
 
-        while ( adionandoTec < 5){
-            adicionarPergunta [adionandoTec];
-            adicionarPergunta = adicionarPergunta + 1;
-        }
+        while (i < 5) {
+            i++;
+            let novaTecnologia = prompt ("Quais tecnologias você gostaria de se especializar ou conhecer?");
+            alert(novaTecnologia + ". Anotado!");
+        };
 
     </script>
 </body>
