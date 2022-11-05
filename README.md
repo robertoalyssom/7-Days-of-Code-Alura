@@ -9,7 +9,7 @@
   <p>A tarefa era reescrever o código passado de maneira que ele imprima as informações de maneira correta.</p>
 
 <h2>Day 2</h2>
-  <p>Entender como capturar e armazenar valores dentro de <strong>variáveis</strong>.</p>
+  <p>Entender como capturar e armazenar valores dentro de <strong>variáveis</strong> .</p>
 
 <h2>Day 3</h2>
   <p>Trabalhar com estruturas de controle de fluxo. Usando estruturas capazes de alterar o fluxo da aplicação, como <strong>for, while, if e else</strong>.</p>
