@@ -2,7 +2,7 @@
 
 <p>Desafio 7 days of Code da Alura, após a formação Iniciante em Programação.</p>
 
-<p>7 Dias de muitos aprendizados, apuros e descorbertas. Foi percepitível minha evolução no mundo da programação, principalmente no JavaScript.</p>
+<p>Mais uma semana de muitos aprendizados, apuros e descorbertas. Foi percepitível minha evolução no mundo da programação, principalmente no JavaScript.</p>
 
 <h2>Day 1</h2>
   <p>Trabalhando com <strong>Operações Booleanas</strong>. Umas das partes mais confusas para quem está aprendendo lógica com Javascript é a operação de igualdade entre valores.</p>
