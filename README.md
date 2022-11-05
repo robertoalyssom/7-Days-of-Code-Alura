@@ -23,7 +23,7 @@
 
 <h2>Day 6</h2>
   <p>Outra operação muito comum é a de remoção de itens da lista</p>
-  <p>Foi adicionada á lista a opção de remover um item de desejo do usuário.</p>
+  <p>Foi adicionado á lista a opção de remover um item de desejo do usuário.</p>
 
 <h2>Day 7</h2>
   <p>Trabalhando com <strong>funções</strong> para criar uma calculadora usando o Prompt. Cada operação é uma função diferente no código.</p>
