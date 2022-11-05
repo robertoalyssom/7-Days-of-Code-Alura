@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7 Days of code - day 4</title>
+</head>
+<body>
+    
+    <script>
+        //-- JOGO DE ADIVINHAÇÃO
+
+        //--1 é preciso criar um programa que comece com um número de 0 a 10
+        // é necessario advinhar esse número
+
+        //--2 Em seguida, o programa vai perguntar qual o valor que você deseja chutar
+        // caso você acerte, ele irá te parabenizar
+        // caso erre, ele vai te dar mais 2 tentativas
+
+        //-- 3 caso você não acerte nenhuma vez, ele vai imprimir qual era o número inicial.
+        
+        //qual estrutura de repetição ultilizar, p/ fazer o programa ser execultado até 3 tentativas, ou até a pessoa acertar?
+        
+        //-- EXTRA
+        // para o pc escolher o numero sozinho será ultilizado Math.random()
+        // Math.florr(Math.random() * (máximo - mínimo + 1) + mínimo) <<<<<<<<<
+        // Onde, claro, você terá que alterar os valores de mínimo e máximo pelos limites inferior e superior, respectivamente.
+
+        /*var numero = 0;
+
+            for (i = 0; i < 10; i++) {
+            numero++
+            console.log(numero);
+            }*/
+        
+        function sortearNumero() {
+            return Math.floor(Math.random() * (11 - 0) + 0);
+           };
+
+        sortearNumero();
+ 
+        //fazer ajustes no ultima chance "Tente novamente"
+
+        for (i = 0; i < 3; i++) {
+            const resposta = prompt ("Olá humano! Eu pensei em um número de 0 a 10. Você consegue adivinha-lo? Voce tem apenas 3 chances.");
+            if (resposta == sortearNumero()) {
+                alert("Demais! Você acertou!");
+                document.write(`Demais! Você acertou! O número é ${resposta}`);
+                break;
+            }
+            else {
+                alert("Que pena, você errou. Tente novamente");
+            };
+
+        };
+
+    </script>
+
+</body>
+</html>

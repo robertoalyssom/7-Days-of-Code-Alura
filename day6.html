@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7 Days of Code - Day 6</title>
+</head>
+<body>
+    
+    <script>
+        //-- 1 criar a opção de remover algum item da lista, que será exibida junto à pergunta de "você deseja adicionar uma comida na lista de compras"?
+
+        //-- 2 A partir daí, caso a pessoa escolha essa opção, o programa irá imprimir os elementos presentes na lista atual,
+        // e a pessoa deverá escrever qual deles deseja remover.
+
+        //-- 3 Depois disso, o programa irá remover o elemento da lista e imprimir a confirmação de que o item realmente não está mais lá.
+
+        //-- 4 Por fim, ele voltará para o ciclo inicial de perguntas.
+        
+        // Se, na hora de deletar o item, o mesmo não for encontrado na lista, você deverá exibir uma mensagem avisando isso.
+        // Por exemplo: "Não foi possível encontrar o item dentro da lista!"
+        
+        // Lembre-se que a opção de remover um item só deverá estar disponível a partir do momento que existir ao menos um elemento dentro da lista de compras.
+    
+        var tiposDeAlimentos = {
+        frutas: [],
+        verduras: [],
+        laticinios: [],
+        congelados: [],
+        doces: [], 
+        };
+        
+        for (i = 0; i < 15; i++) {
+            var tipos = tiposDeAlimentos;
+            var simOuNao = prompt("Você deseja adicionar comida à sua lista de compras? responda 'sim' ou 'não'. Caso queira excluir um item da lista digite 'remover'.");            
+            
+            if (simOuNao == "sim") { //-- SIM --
+                var alimento = prompt("Qual alimento você deseja acrescentar á lista?");
+                var categoria = prompt(`Em qual categoria o alimento ${alimento} pertence? Escolha entre frutas, verduras, laticínios, congelados e doces`);
+                    
+                if (categoria == "frutas") {
+                    tipos.frutas.push(alimento);
+                    console.log(tiposDeAlimentos.frutas);
+                }
+                else if (categoria == "verduras") {
+                    tipos.verduras.push(alimento);
+                }                    
+                else if (categoria == "laticínios") {
+                    tipos.laticinios.push(alimento);
+                }
+                else if (categoria == "congelados") {
+                    tipos.congelados.push(alimento);
+                }
+                else if (categoria == "doces") {
+                    tipos.doces.push(alimento);
+                }        
+                else {
+                    alert("Escolha uma categoria");
+                };
+            }
+            else if (simOuNao == "remover") { // == Remover ==
+                if (tipos.frutas.length === 0 && tipos.verduras.length === 0 && tipos.laticinios.length === 0 && tipos.congelados.length === 0 && tipos.doces.length === 0) {
+                    alert("A lista está vazia, não é possível remover um alimento");
+                }
+                else { //-- escolher alimento p/ remover --
+                    let removerAlimento= prompt(`Qual alimento você deseja remover? (Frutas: ${tipos.frutas}) (Verduras: ${tipos.verduras}) (Laticínios: ${tipos.laticinios}) (Congelados: ${tipos.congelados}) (Doces: ${tipos.doces})`);
+                    console.log(removerAlimento);
+                    console.log(tipos.frutas.indexOf(removerAlimento));
+                    
+                    var indiceParaRemover = tipos.frutas.indexOf(removerAlimento); // indexOf pega o número índice escolhida pelo 'remover alimento' e é atribuia à indiceParaRemover
+                    tipos.frutas.splice(indiceParaRemover, 1); // No metodo splice você especifica o indice inicial e a quantidade de elementos a serem removidos incluindo o elemento do indice inicial.
+                    tipos.verduras.splice(indiceParaRemover, 1);
+                    tipos.laticinios.splice(indiceParaRemover, 1);
+                    tipos.frutas.splice(indiceParaRemover, 1);
+                    tipos.doces.splice(indiceParaRemover, 1);
+                    
+                    console.log(tiposDeAlimentos.frutas);
+                    console.log(tiposDeAlimentos.doces);
+
+                    alert(`O alimento ${removerAlimento} foi removido com sucesso!`);
+                }
+            }
+            else if (simOuNao == "não") { //== NÃO ==
+                alert("Ok!");
+                break;
+            }
+            else {
+                alert("Escolha apenas entre 'sim', 'não' ou 'remover'");
+            };
+
+        };
+        
+    </script>
+
+</body>
+</html>

@@ -9,10 +9,10 @@
 <body>
     <script type="text/javascript">
 
-        let nome = prompt ("What is your name?");
-        document.write ("Hello ", nome, ", ");
+        let name = prompt ("What is your name?");
+        document.write ("Hello ", name, ", ");
         
-        let age = prompt ("What is your age?");
+        let age = prompt (`What is your age ${name}?`);
         document.write ("you have ", age, " years old" );
             
         let language = prompt ("What programmig language are you learning?");

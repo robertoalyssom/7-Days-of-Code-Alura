@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt,br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7 Days of Code - Day 7</title>
+</head>
+<body>
+    <script>
+        //--1 A pessoa deverá escolher uma opção de operação impressa pelo programa na tela.
+
+        //--2 Ela deverá inserir os dois valores que deseja utilizar, e o programa imprimirá o resultado da operação em questão.
+
+        //-- As opções disponíveis deverão ser: soma, subtração, multiplicação, divisão, e sair.
+        // Nessa última, o programa deverá parar de ser executado, mostrando uma mensagem "Até a próxima".
+        
+        let pergunta = prompt("Digite uma operação entre '+' '-' '*' '/'. Digite 'sair' para... sair.");
+
+        switch (pergunta) {
+            case '+':
+                alert(`O resultado desta soma é: ${somar()}`);
+                break;
+            case '-':
+                alert(`O resultado desta subtração é: ${subtrair()}`);
+                break;
+            case '*':
+                alert(`O resultado desta multiplicação é: ${multiplicar()}`)
+                break;
+            case '/':
+                alert(`O resultado desta divisão é: ${dividir()}`);
+                break;
+            case 'sair':
+                alert("Saindo");
+                break;
+            default:
+                alert("Descupe! Eu não entendi");
+        };
+
+        function somar() {
+            let numeroA = prompt("Digite um número");
+            let numeroB = prompt(`Digite um novo número para somar com ${numeroA}`);
+            return parseInt(numeroA) + parseInt(numeroB); //-- parseInt para somar! --
+        };
+
+        function subtrair() {
+            let numeroA = prompt("Digite um número");
+            let numeroB = prompt(`Digite um novo número para subtrair o ${numeroA}`);
+            return numeroA - numeroB;
+        };
+
+        function multiplicar() {
+            let numeroA = prompt("Digite um número");
+            let numeroB = prompt(`Digite um novo número para multiplicar o ${numeroA}`);
+            return numeroA * numeroB;
+        };
+
+        function dividir() {
+            let numeroA = prompt("Digite um número");
+            let numeroB = prompt(`Digite um novo número para dividir o ${numeroA}`);
+            return numeroA / numeroB;
+        };
+
+
+
+    </script>
+</body>
+</html>
